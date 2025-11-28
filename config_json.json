@@ -1,0 +1,37 @@
+{
+  "markets": [
+    {
+      "id": "0x1234567890abcdef",
+      "name": "Trump wins 2024 Election",
+      "api_endpoint": "https://clob.polymarket.com/markets/0x1234567890abcdef"
+    },
+    {
+      "id": "0xabcdef1234567890",
+      "name": "Bitcoin above $100k by Dec 2025",
+      "api_endpoint": "https://clob.polymarket.com/markets/0xabcdef1234567890"
+    },
+    {
+      "id": "0xfedcba0987654321",
+      "name": "Fed Rate Cut in March",
+      "api_endpoint": "https://clob.polymarket.com/markets/0xfedcba0987654321"
+    }
+  ],
+  "thresholds": {
+    "primary": 1.0,
+    "secondary": 0.95,
+    "tertiary": 0.9
+  },
+  "polling_interval_seconds": 5,
+  "output_csv": "arbitrage_data.csv",
+  "use_google_sheets": true,
+  "google_sheets_name": "Polymarket Arbitrage Data",
+  "email_alerts": {
+    "enabled": false,
+    "recipient": "your_email@example.com",
+    "alert_threshold": 0.90,
+    "smtp_server": "smtp.gmail.com",
+    "smtp_port": 587,
+    "sender_email": "alert@example.com",
+    "sender_password": "your_app_password"
+  }
+}
